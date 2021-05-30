@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensend');
+
+body {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+h1, h2, #victory {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+h1, h2 {
+    color: #ffff99;
+    text-shadow: 1px 1px 6px #000;
+}
+h1 {
+    font-size: 60px;
+    clear: both;
+}
+h2 {
+    font-size: 50px;
+    clear: none;
+    margin-bottom: 0;
+}
+#title {
+    display: none;
+}
+button, a {
+    font-family: 'Open Sans Condensend', sans-serif;
+}
+#play {
+    margin-top: 30px;
+}
+p {
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+    color: #666;
+}
+#sound:hover {
+    opacity: 0.5;
+}
+#sound {
+    float: right;
+    margin: 20px 20px 0 0;
+}
+main {
+    background: linear-gradient(#99d6ff, #fff);
+    width: full;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    height: 160px;
+}
+button {
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #99d6ff;
+    color: #fff;
+    border: 1px solid #b3b3b3;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px  #666;
+}
+button:hover {
+    background: #666; 
+    transition: 0.8s;
+}
+#back {
+    background: #ffffb3;
+    color: #666;
+    text-shadow: none;
+    padding: 10px;
+    margin: 15px auto;
+}
+#back:hover {
+    background: #fff; 
+    transition: 0.8s;
+}
+content {
+    clear: left;
+}
+#grid {
+    width: 700px;
+    display: inline-block;
+    left: 10%;
+}
+.box {
+    width: 200px;
+    padding: 10px;
+    display: inline-block;
+}
+.empty {
+    width: 100%;
+    box-shadow: 3px 3px 3px #808080;
+    border-radius: 10px;
+}
+#right {
+    width: 34%;
+    margin: 30px 0 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.name {
+    margin: 0;
+    font-style: normal;
+    text-transform: capitalize;
+}
+#info {
+    margin: 20px auto;
+}
+#draggablePokemon {
+    margin-top: 40px;
+}
+.pokemon {
+    height: 250px;
+    border: none;
+    position: absolute;
+}
+#pokemons {
+    margin: 50px auto;
+}
+#pokemons img {
+    display: none;
+}
+#play {
+    display: none;
+}
+#victory {
+    margin-top: 20px;
+    color: #b7ccef;
+    text-shadow: 1px 1px 2px #000;
+    animation: victory 1s;
+    display: none;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes victory {
+    from {
+        font-size: 20px;
+        color: #b7ccef;
+        border: none;
+    }
+    to {
+        font-size: 70px;
+        color: #739ad6;
+    }
+}
+#again {
+    margin-top: 30px;
+    display: none;
+}
